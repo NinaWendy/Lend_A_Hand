@@ -14,25 +14,25 @@
         android:theme="@style/Theme.Lend_A_Hand"
         tools:targetApi="31">
         <activity
-            android:name=".PaymentActivity"
+            android:name=".ui.activities.PaymentActivity"
             android:exported="false" />
         <activity
-            android:name=".DetailActivity"
+            android:name=".ui.activities.DetailActivity"
             android:exported="false" />
         <activity
-            android:name=".HomeActivity"
+            android:name=".ui.activities.HomeActivity"
             android:exported="false" />
         <activity
-            android:name=".OrgActivity"
+            android:name=".ui.activities.OrgActivity"
             android:exported="false" />
         <activity
-            android:name=".CheckInActivity"
+            android:name=".ui.activities.CheckInActivity"
             android:exported="false" />
         <activity
-            android:name=".LoginActivity"
+            android:name=".ui.activities.LoginActivity"
             android:exported="false" />
         <activity
-            android:name=".SignupActivity"
+            android:name=".ui.activities.SignupActivity"
             android:exported="false" />
         <activity
             android:name=".MainActivity"
