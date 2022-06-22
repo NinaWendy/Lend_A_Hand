@@ -56,13 +56,13 @@
         app:layout_constraintTop_toBottomOf="@+id/textView2" />
 
     <EditText
-        android:id="@+id/textView10"
+        android:id="@+id/organizationNameEditTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
         android:ems="10"
+        android:hint="Organization Name"
         android:minHeight="48dp"
-        android:text="Organization Name"
         android:textColor="@color/black"
         android:textSize="14sp"
         android:textStyle="normal"
@@ -72,59 +72,59 @@
         app:layout_constraintTop_toBottomOf="@+id/textView9" />
 
     <EditText
-        android:id="@+id/textView11"
+        android:id="@+id/organizationContactsEditTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="12dp"
         android:drawableStart="@drawable/ic_phone"
         android:drawablePadding="10dp"
         android:ems="10"
+        android:hint="Contact"
         android:minHeight="48dp"
-        android:text="Contact"
         android:textColor="@color/black"
         android:textSize="14sp"
         android:textStyle="normal"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.467"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView10" />
+        app:layout_constraintTop_toBottomOf="@+id/organizationNameEditTextView" />
 
     <EditText
-        android:id="@+id/textView12"
+        android:id="@+id/organizationOpenHoursEditTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="12dp"
         android:drawableStart="@drawable/ic_time"
         android:drawablePadding="10dp"
         android:ems="10"
+        android:hint="Open Hours"
         android:minHeight="48dp"
-        android:text="Open Hours"
         android:textColor="@color/black"
         android:textSize="14sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.467"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView11" />
+        app:layout_constraintTop_toBottomOf="@+id/organizationContactsEditTextView" />
 
     <EditText
-        android:id="@+id/textView13"
+        android:id="@+id/organizationDescriptionEditTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="4dp"
         android:drawableStart="@drawable/ic_description"
         android:drawablePadding="10dp"
         android:ems="10"
+        android:hint="Description"
         android:minHeight="48dp"
-        android:text="Description"
         android:textColor="@color/black"
         android:textSize="14sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.467"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView12" />
+        app:layout_constraintTop_toBottomOf="@+id/organizationOpenHoursEditTextView" />
 
     <Button
-        android:id="@+id/button3"
+        android:id="@+id/organizationJoinButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="24dp"
@@ -135,5 +135,5 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.467"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView13" />
+        app:layout_constraintTop_toBottomOf="@+id/organizationDescriptionEditTextView" />
 </androidx.constraintlayout.widget.ConstraintLayout>
