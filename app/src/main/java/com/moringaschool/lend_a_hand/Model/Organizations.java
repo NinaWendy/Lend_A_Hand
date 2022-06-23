@@ -1,6 +1,8 @@
 package com.moringaschool.lend_a_hand.Model;
 
-public class Organizations {
+import java.io.Serializable;
+
+public class Organizations implements Serializable {
     private String name;
     private String contact;
     private String openHours;

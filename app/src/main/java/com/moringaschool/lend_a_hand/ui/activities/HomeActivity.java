@@ -25,9 +25,7 @@ import butterknife.BindView;
 import butterknife.ButterKnife;
 
 public class HomeActivity extends AppCompatActivity implements RecyclerViewInterface {
-    private static final String TAG = "Clicked";
-    @BindView(R.id.organizationNameTextView)
-    TextView org;
+
     RecyclerView recyclerView;
     DatabaseReference databaseReference;
     RecyclerViewAdapter recyclerViewAdapter;
@@ -42,7 +40,6 @@ public class HomeActivity extends AppCompatActivity implements RecyclerViewInter
 
         recyclerView = findViewById(R.id.organizationList);
         databaseReference = FirebaseDatabase.getInstance().getReference("Organizations");
-        recyclerView.setHasFixedSize(true);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
 
         list = new ArrayList<>();
@@ -68,10 +65,9 @@ public class HomeActivity extends AppCompatActivity implements RecyclerViewInter
 
     @Override
     public void onItemClick(int position) {
-        String name = org.getText().toString();
-
-//        Intent intent = new Intent(this, DetailActivity.class);
-//        startActivity(intent);
+        Intent intent = new Intent(this, DetailActivity.class);
+        intent.putExtra("details",list.get(position));
+        startActivity(intent);
 
     }
 }
