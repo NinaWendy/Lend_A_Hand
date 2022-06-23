@@ -8,6 +8,8 @@ import android.os.Bundle;
 import android.util.Log;
 import android.util.Patterns;
 import android.view.View;
+import android.widget.Button;
+import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -25,15 +27,15 @@ public class SignupActivity extends AppCompatActivity {
     private FirebaseAuth.AuthStateListener mAuthListener;
 
     @BindView(R.id.editTextFistName)
-    TextView firstName;
+    EditText firstName;
     @BindView(R.id.editTextLastName)
-    TextView lastName;
+    EditText lastName;
     @BindView(R.id.editTextTextEmailAddress)
-    TextView emailAddress;
+    EditText emailAddress;
     @BindView(R.id.editTextTextPassword)
-    TextView password;
+    EditText password;
     @BindView(R.id.button)
-    TextView btnRegister;
+    Button btnRegister;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -54,7 +56,7 @@ public class SignupActivity extends AppCompatActivity {
         //getInstance of firebaseAuth object
         mAuth = FirebaseAuth.getInstance();
         
-        createAuthStateListener();
+//        createAuthStateListener();
 
     }
     private void createNewUser(){
@@ -80,33 +82,33 @@ public class SignupActivity extends AppCompatActivity {
                 });
     }
 //    listening for user authentication
-    private void createAuthStateListener(){
-        mAuthListener = new FirebaseAuth.AuthStateListener() {
-            @Override
-            public void onAuthStateChanged(@NonNull FirebaseAuth firebaseAuth) {
-                final FirebaseUser user = firebaseAuth.getCurrentUser();
-                if (user != null) {
-                    Intent intent = new Intent(SignupActivity.this, HomeActivity.class);
-                    intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
-                    startActivity(intent);
-                    finish();
-                }
-            }
-        };
-    }
-    @Override
-    public void onStart() {
-        super.onStart();
-        mAuth.addAuthStateListener(mAuthListener);
-    }
+//    private void createAuthStateListener(){
+//        mAuthListener = new FirebaseAuth.AuthStateListener() {
+//            @Override
+//            public void onAuthStateChanged(@NonNull FirebaseAuth firebaseAuth) {
+//                final FirebaseUser user = firebaseAuth.getCurrentUser();
+//                if (user != null) {
+//                    Intent intent = new Intent(SignupActivity.this, HomeActivity.class);
+//                    intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
+//                    startActivity(intent);
+//                    finish();
+//                }
+//            }
+//        };
+//    }
+//    @Override
+//    public void onStart() {
+//        super.onStart();
+//        mAuth.addAuthStateListener(mAuthListener);
+//    }
 
-    @Override
-    public void onStop() {
-        super.onStop();
-        if (mAuthListener != null) {
-            mAuth.removeAuthStateListener(mAuthListener);
-        }
-    }
+//    @Override
+//    public void onStop() {
+//        super.onStop();
+//        if (mAuthListener != null) {
+//            mAuth.removeAuthStateListener(mAuthListener);
+//        }
+//    }
     //validate first name is entered
     private boolean isValidFirstName(String name){
         if(name.equals("")){
