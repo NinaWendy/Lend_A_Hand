@@ -5,6 +5,7 @@
       <map>
         <entry key="app/src/main/res/layout/activity_detail.xml" value="0.17552083333333332" />
         <entry key="app/src/main/res/layout/activity_home.xml" value="0.190625" />
+        <entry key="app/src/main/res/layout/activity_main.xml" value="0.1" />
         <entry key="app/src/main/res/layout/activity_payment.xml" value="0.25" />
       </map>
     </option>
