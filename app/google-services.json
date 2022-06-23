@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "325764819422",
+    "project_id": "lend-a-hand-e4bd5",
+    "storage_bucket": "lend-a-hand-e4bd5.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:325764819422:android:cadacf980938c873d5154f",
+        "android_client_info": {
+          "package_name": "com.moringaschool.lend_a_hand"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "325764819422-12co45tnm29pbu3srs3sc3a12popucs6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCDQgwQs-u3HSpca8Ob_SMI8S9Gp5Nlfi0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "325764819422-12co45tnm29pbu3srs3sc3a12popucs6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

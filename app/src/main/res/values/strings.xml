@@ -1,3 +1,12 @@
 <resources>
     <string name="app_name">Lend_A_Hand</string>
+    <string name="CardItemTitle">Mama Ngina Children\'s Home</string>
+    <string name="cardImage">Picture of happy children</string>
+    <string name="home_activity">HOME ACTIVITY</string>
+    <string name="organization_name">Organization Name</string>
+    <string name="charity">(Charity)</string>
+    <string name="organization_description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse et fugit iste maiores repudiandae vitae? Aliquid amet aut dolore eligendi enim fugiat in iste itaque, laborum molestias ratione sequi tempora.</string>
+    <string name="organization_contact">+254772552245</string>
+    <string name="organization_hours">8:00am - 7:00pm</string>
+    <string name="go_to_payments_button">Lend A Hand</string>
 </resources>
