@@ -81,34 +81,6 @@ public class SignupActivity extends AppCompatActivity {
                     }
                 });
     }
-//    listening for user authentication
-//    private void createAuthStateListener(){
-//        mAuthListener = new FirebaseAuth.AuthStateListener() {
-//            @Override
-//            public void onAuthStateChanged(@NonNull FirebaseAuth firebaseAuth) {
-//                final FirebaseUser user = firebaseAuth.getCurrentUser();
-//                if (user != null) {
-//                    Intent intent = new Intent(SignupActivity.this, HomeActivity.class);
-//                    intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
-//                    startActivity(intent);
-//                    finish();
-//                }
-//            }
-//        };
-//    }
-//    @Override
-//    public void onStart() {
-//        super.onStart();
-//        mAuth.addAuthStateListener(mAuthListener);
-//    }
-
-//    @Override
-//    public void onStop() {
-//        super.onStop();
-//        if (mAuthListener != null) {
-//            mAuth.removeAuthStateListener(mAuthListener);
-//        }
-//    }
     //validate first name is entered
     private boolean isValidFirstName(String name){
         if(name.equals("")){

@@ -32,14 +32,14 @@ public class CheckInActivity extends AppCompatActivity {
         login.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(CheckInActivity.this, PaymentActivity.class);
+                Intent intent = new Intent(CheckInActivity.this, LoginActivity.class);
                 startActivity(intent);
             }
         });
         signUp.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(CheckInActivity.this, SignupActivity.class);
+                Intent intent = new Intent(CheckInActivity.this, PaymentActivity.class);
                 startActivity(intent);
             }
         });
