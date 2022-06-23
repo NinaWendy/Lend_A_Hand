@@ -21,6 +21,10 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
     }
+    buildTypes.each {
+        it.buildConfigField 'String', 'CONSUMER_KEY',DARAJA_CONSUMER_KEY
+        it.buildConfigField 'String', 'CONSUMER_SECRET', DARAJA_CONSUMER_SECRET
+    }
     compileOptions {
         sourceCompatibility JavaVersion.VERSION_1_8
         targetCompatibility JavaVersion.VERSION_1_8
@@ -68,6 +72,4 @@ dependencies {
     implementation "com.google.guava:guava:31.1-android"
     //daimaija animation
     implementation 'com.daimajia.androidanimations:library:2.4@aar'
-    //lottie
-    implementation "com.airbnb.android:lottie:3.4.0"
 }
